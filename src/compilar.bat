@@ -1,5 +1,5 @@
 @echo off
-g++ src/main.cpp -I C:\raylib\w64devkit\include -L C:\raylib\w64devkit\lib -lraylib -lopengl32 -lgdi32 -lwinmm -o juego.exe
+g++ src/main.cpp -I C:\raylib\w64devkit\include -L C:\raylib\w64devkit\lib -lraylib -lopengl32 -lgdi32 -lwinmm -static-libgcc -static-libstdc++ -static -o juego.exe
 if %errorlevel%==0 (
     echo.
     echo ===== COMPILACION EXITOSA =====
